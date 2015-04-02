@@ -1,0 +1,10 @@
+var http = require('http');
+var https = require('https');
+var fs = require('fs');
+const bl = require('bl');
+//var bl = new BufferList();
+var server = http.createServer(function (req, res) {
+  //res.writeHead(200, {'Content-Type': 'text/plain'});
+  //res.write("this is where it gets interesting");
+  //res.end('Hello World\n');
+}).listen(process.argv[2], '127.0.0.1');
